@@ -7,7 +7,7 @@ export const TeamHome = () => {
       <section>
         {data.map((id, name) => (
           <div key={name} className={`card card-${id.id}`}>
-            <p>{name}</p>
+            <p>{id.name}</p>
             <Link to={`/${id.id}`}>More info</Link>
           </div>
         ))}

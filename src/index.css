@@ -20,11 +20,51 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 20px;
+  position: relative;
+}
+
+.card-0 {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/chow-chow-portrait-royalty-free-image-1652926953.jpg?crop=0.44455xw:1xh;center,top&resize=980:*");
 }
 
 .card-1 {
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/little-cute-maltipoo-puppy-royalty-free-image-1652926025.jpg?crop=0.444xw:1.00xh;0.129xw,0&resize=980:*");
 }
 
-.card-2 {
-  /* background-image: url("https://ca.slack-edge.com/T6RP2QWTG-U05T6AXN142-8d4eaef27ea3-512"); */
+.card p {
+  position: absolute;
+  bottom: -50px;
+}
+
+.card a {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+}
+main a {
+  padding: 5px 10px;
+  border: 1px solid #fff;
+}
+
+nav {
+  background-color: green;
+  display: flex;
 }
