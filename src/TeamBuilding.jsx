@@ -1,5 +1,28 @@
-export const TeamBuilding = () => {
-  // https://www.boredapi.com/api/activities
+import { useEffect, useState } from "react";
 
-  return <div>TeamBuilding</div>;
+export const TeamBuilding = () => {
+  const [activities, setActivities] = useState({});
+  const api = "http://www.boredapi.com/api/activity?type=recreational";
+
+  const fetchActivities = async () => {
+    try {
+      const response = await fetch(api);
+      const data = await response.json();
+      setActivities(() => data);
+    } catch (error) {
+      console.error("Error Message:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchActivities();
+  }, []);
+
+  return (
+    <section>
+      <h1>Find team building activities!</h1>
+      <p>{activities.activity}</p>
+      <button onClick={fetchActivities}>Generate a new activity!</button>
+    </section>
+  );
 };

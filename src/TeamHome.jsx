@@ -1,5 +1,5 @@
 import { data } from "./data.json";
-
+import { Link } from "react-router-dom";
 export const TeamHome = () => {
   return (
     <main>
@@ -8,7 +8,7 @@ export const TeamHome = () => {
         {data.map((id, name) => (
           <div key={name} className={`card card-${id.id}`}>
             <p>{name}</p>
-            <button id={id.id}>More info</button>
+            <Link to={`/${id.id}`}>More info</Link>
           </div>
         ))}
       </section>

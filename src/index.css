@@ -13,3 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+.card {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-1 {
+}
+
+.card-2 {
+  /* background-image: url("https://ca.slack-edge.com/T6RP2QWTG-U05T6AXN142-8d4eaef27ea3-512"); */
+}
