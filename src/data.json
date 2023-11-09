@@ -2,11 +2,19 @@
   "data": [
     {
       "id": 0,
-      "name": "Joona Miettinen"
+      "name": "Joona Miettinen",
+      "birthday": "2000-10-10",
+      "home": "Stockholm",
+      "hobbies": ["basket", "surfing", "travel"],
+      "favouriteanimal": "croccodile"
     },
     {
       "id": 1,
-      "name": "Pernilla Sterner"
+      "name": "Pernilla Sterner",
+      "birthday": "1996-10-10",
+      "home": "Stockholm",
+      "hobbies": ["painting", "gaming", "coffee"],
+      "favouriteanimal": "monkies"
     }
   ]
 }

@@ -6,9 +6,9 @@ export const TeamHome = () => {
       <h2>Team Info</h2>
       <section>
         {data.map((id, name) => (
-          <div key={name} className={`card card-${id}`}>
+          <div key={name} className={`card card-${id.id}`}>
             <p>{name}</p>
-            <button id={id}>More info</button>
+            <button id={id.id}>More info</button>
           </div>
         ))}
       </section>

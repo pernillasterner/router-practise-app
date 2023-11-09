@@ -11,7 +11,7 @@ export function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<TeamHome />}></Route>
-          <Route path="/team-detail" element={<TeamDetail />}></Route>
+          <Route path="/:id" element={<TeamDetail />}></Route>
           <Route path="/team-building" element={<TeamBuilding />}></Route>
         </Routes>
       </BrowserRouter>
